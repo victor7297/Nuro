@@ -1,0 +1,116 @@
+.asistenciaViajero {
+    margin-top: 75px; //75
+    h2,
+    p,
+    li {
+        color: #8741fe;
+    }
+    h2 {
+        font-family: 'Lalezar', cursive;
+        font-size: 60px;
+        border-bottom: 2px solid #8741fe;
+    }
+    button {
+        background: #8741fe;
+        color: white;
+        width: 60%;
+    }
+    .divContenido {
+        margin-left: 60px;
+    }
+}
+
+.asistenciaFuneraria {
+    padding-top: 20px;
+    margin-top: 30px; //30
+    background-image: url("../../../assets/Imagenes/Fotos/perro.jpg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    //background-position: right;
+    background-position: 85% 0%;
+    h2,
+    p,
+    li {
+        color: #8741fe;
+    }
+    h2 {
+        font-family: 'Lalezar', cursive;
+        font-size: 50px;
+        border-bottom: 2px solid #8741fe;
+    }
+    button {
+        background: #8741fe;
+        color: white;
+        width: 60%;
+    }
+    .divContenido {
+        margin-left: 60px;
+    }
+    .divImg {
+        padding-left: 0px;
+        padding-right: 150px;
+        img {
+            padding: 0px;
+        }
+    }
+}
+
+.asistenciaMedica {
+    margin-top: 0px;
+    background: #8741fe;
+    h2,
+    p,
+    li {
+        color: white;
+    }
+    h2 {
+        font-family: 'Lalezar', cursive;
+        font-size: 50px;
+        border-bottom: 2px solid white;
+    }
+    button {
+        background: white;
+        color: #8741fe;
+        width: 60%;
+    }
+    .divContenido {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width:575px) and (min-width:0px) {
+    .asistenciaFuneraria,
+    .asistenciaMedica,
+    .asistenciaViajero {
+        background-image: none;
+        img {
+            display: none;
+        }
+    }
+    .asistenciaViajero,
+    .asistenciaFuneraria {
+        .divContenido {
+            margin-left: 0px;
+        }
+    }
+    .asistenciaMedica {
+        .divContenido {
+            margin-right: 0px;
+        }
+    }
+    .asistenciaViajero,
+    .asistenciaMedica {
+        padding-bottom: 10px;
+    }
+    .asistenciaMedica {
+        padding-top: 60px;
+    }
+    .asistenciaFuneraria {
+        margin-top: 0px;
+        padding-top: 30px;
+    }
+    .asistenciaViajero {
+        margin-top: 60px;
+        padding-top: 80px;
+    }
+}

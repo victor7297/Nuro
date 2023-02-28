@@ -1,0 +1,273 @@
+.banner {
+    margin-top: 60px;
+    .tabSalud {
+        input {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+            margin-bottom: 15px;
+            margin-top: -12px;
+        }
+        .btn {
+            background: #8741fe;
+            color: white;
+            border-radius: 6px;
+            width: 20%;
+        }
+        label {
+            color: #8741fe;
+            margin-left: 12px;
+        }
+        select {
+            border: 2px solid #8741fe;
+            border-radius: 3px;
+            margin-left: 5px;
+            color: gray;
+            width: 100%;
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+        }
+    }
+    .tabViajes {
+        input {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+            margin-bottom: 15px;
+            margin-top: -12px;
+        }
+        .btn {
+            background: #8741fe;
+            color: white;
+            border-radius: 6px;
+            width: 20%;
+        }
+        label {
+            color: #8741fe;
+            margin-left: 9px;
+        }
+        select {
+            border: 2px solid #8741fe;
+            border-radius: 3px;
+            margin-left: 5px;
+            color: gray;
+            width: 100%;
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+        }
+    }
+    .tabMascota {
+        label {
+            color: #8741fe;
+            margin-left: 9px;
+        }
+        input {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+            margin-bottom: 15px;
+            margin-top: -12px;
+        }
+        select {
+            border: 2px solid #8741fe;
+            border-radius: 3px;
+            margin-left: 5px;
+            color: gray;
+            width: 100%;
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+            margin-bottom: 10px;
+        }
+        .btn {
+            background: #8741fe;
+            color: white;
+            border-radius: 6px;
+            width: 20%;
+        }
+    }
+}
+
+.columna {
+    background-image: url("../../../assets/Imagenes/Banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+.ContenedorTarjeta {
+    margin-top: 60px;
+}
+
+.Tarjeta {
+    box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav-link {
+    color: #8741fe;
+}
+
+.nav-item {
+    .active {
+        background: #8741fe;
+    }
+}
+
+.botonCotizar {
+    color: white;
+    background: #8741fe;
+}
+
+h1 {
+    color: #8a4fff;
+}
+
+
+/*-------------seccion Eslogan---------------------------------------*/
+
+.eslogan {
+    margin-top: 150px;
+    h1 {
+        font-family: 'Lalezar', cursive;
+        font-size: 45px;
+    }
+}
+
+
+/*---------------------------seccion Servicios------------------------------------------*/
+
+.servicios {
+    margin-top: 100px;
+    .card {
+        border: none;
+        h5 {
+            border-bottom: 2px solid white;
+        }
+        h5,
+        p {
+            color: white;
+        }
+        a {
+            display: inline-block;
+            width: 40%;
+            background: white;
+            color: #8741fe;
+            transition: all 0.3s ease;
+        }
+        /*a:hover {
+            background: white;
+            opacity: 0.8;
+            color: #8741fe;
+        }*/
+        .card-body {
+            border-radius: 5px;
+            background: #8741fe;
+            width: 90%;
+            margin-top: -40px;
+            box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+
+/*---------------------------seccion Nosotros------------------------------------------*/
+
+.nosotros {
+    margin-top: 50px;
+    background: #8741fe;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../../../assets/Imagenes/Fotos/mockup_of_man_holding_a_tablet_pro1.png");
+    background-size: 62%;
+    background-repeat: no-repeat;
+    //background-position: right;
+    background-position: 110% 0%;
+    h2,
+    p,
+    li {
+        color: white;
+    }
+    h2 {
+        font-family: 'Lalezar', cursive;
+        font-size: 80px;
+        border-bottom: 2px solid white;
+    }
+    .div-contenido {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:575px) and (min-width:0px) {
+    .nosotros {
+        background-image: none;
+        img {
+            display: none;
+        }
+    }
+}
+
+
+/*---------------------------seccion Cotizador------------------------------------------*/
+
+.cotizador {
+    margin-top: 100px;
+    h2 {
+        font-family: 'Lalezar', cursive;
+        font-size: 45px;
+        color: #8741fe;
+        margin-top: -50px;
+    }
+    .divCotiza {
+        border-radius: 15px;
+        background: #D9D5E1;
+        //background: #4874cb;
+        box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+         ::placeholder {
+            color: black;
+        }
+        input {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+            background: none;
+            color: black;
+            margin-bottom: 15px;
+            margin-top: -12px;
+        }
+        label {
+            color: #8741fe;
+            margin-left: 12px;
+        }
+        select {
+            border-radius: 3px;
+            margin-left: 10px;
+            background: none;
+            color: black;
+            width: 100%;
+            border: none;
+            border-radius: 0px;
+            border-bottom: 3px solid #8741fe;
+        }
+        ul {
+            .active {
+                background: #8741fe;
+                color: white;
+            }
+        }
+        .btn {
+            background: #8741fe;
+            color: white;
+            border-radius: 6px;
+            width: 20%;
+        }
+    }
+}

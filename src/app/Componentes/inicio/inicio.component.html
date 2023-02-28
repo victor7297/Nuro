@@ -1,0 +1,431 @@
+<section class="banner container-fluid">
+    <div class="row">
+        <div class="columna col-12">
+
+            <div class="ContenedorTarjeta container">
+
+                <div class="row">
+
+                    <div class="divTarjeta col-12 col-md-5">
+
+                        <div class="Tarjeta card">
+
+                            <div class="card-header">
+                                <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Viajes</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Salud</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mascota</button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="tab-content" id="pills-tabContent">
+
+                                    <div class="tabViajes tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                        <form action="formViajes">
+
+                                            <div class="d-flex flex-column">
+
+                                                <label class="" for="Origen">Origen:</label>
+                                                <select class="selectOrigen" name="Origen" id="Origen">
+                                                    <option value="Mexico">Mexico</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Venezuela">Venezuela</option>
+                                                </select>
+
+                                                <label class="mt-2" for="Destino">Destino:</label>
+                                                <select name="Destino" id="Destino">
+                                                    <option value="Mexico">Mexico</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Venezuela">Venezuela</option>
+                                                </select>
+
+                                                <label class="mt-3" for="fechaSalida">Fecha Salida:</label>
+                                                <input type="date" class="calendario form-control mt-1" name="fechaSalida" id="fechaSalida">
+
+                                                <label for="fechaSalida">Fecha Regreso:</label>
+                                                <input type="date" class="calendario form-control mt-1" name="fechaRegreso" id="fechaRegreso">
+
+                                                <label class="mt-2" for="Viajeros">Cantidad de Viajeros:</label>
+                                                <select name="Viajeros" id="">Viajeros
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+
+                                                <label for="Correo" class="form-label mt-2">Correo:</label>
+                                                <input type="text" class="form-control" id="Correo" placeholder="Escribe tu correo" required>
+
+                                                <div class="d-flex justify-content-center mt-3">
+                                                    <input type="submit" value="Cotizar" class="btn hvr-wobble-top">
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                    <div class="tabSalud tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                                        <form action="formSalud">
+
+                                            <label for="Nombres" class="form-label">Nombre:</label>
+                                            <input type="text" class="form-control" id="Nombres" placeholder="Escribe tu nombre" required>
+
+                                            <label for="Apellidos" class="form-label">Apellido:</label>
+                                            <input type="text" class="form-control" id="Apellidos" placeholder="Escribe tu apellido" required>
+
+                                            <label for="Telefono" class="form-label">Telefono:</label>
+                                            <input type="text" class="form-control" id="Telefono" placeholder="Escribe tu telefono" required>
+
+                                            <label for="Correo" class="form-label">Correo:</label>
+                                            <input type="text" class="form-control" id="Correo" placeholder="Escribe tu correo" required>
+
+                                            <label class="labelPais" for="Pais:">Pais:</label>
+                                            <select class="selectPais mb-3" name="pais" id="Pais">
+                                                <option value="Mexico">Mexico</option>
+                                                <option value="Peru">Peru</option>
+                                                <option value="Venezuela">Venezuela</option>
+                                            </select>
+
+                                            <label for="Personas:">Cantidad a Cotizar:</label>
+                                            <select name="Personas" id="Personas">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+
+                                            <div class="d-flex justify-content-center mt-5">
+                                                <input type="submit" value="Cotizar" class="btn hvr-wobble-top">
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                    <div class="tabMascota tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                        <form action="">
+
+                                            <label for="Nombres" class="form-label">Nombres:</label>
+                                            <input type="text" class="form-control" id="Nombres" placeholder="Escribe tu nombre" required>
+
+                                            <label for="Apellidos" class="form-label">Apellidos:</label>
+                                            <input type="text" class="form-control" id="Apellidos" placeholder="Escribe tu apellido" required>
+
+                                            <label for="NombreMascota" class="form-label">Nombre Mascota:</label>
+                                            <input type="text" class="form-control" id="NombreMascota" placeholder="Escribe el de tu mascota" required>
+
+                                            <label for="TipoMascota">Tipo de mascota:</label>
+                                            <select name="TipoMascota" id="TipoMascota">
+                                                <option value="Gato">Gato</option>
+                                                <option value="Perro">Perro</option>
+                                            </select>
+
+                                            <br/>
+
+                                            <label for="RazaMascota" class="form-label">Raza:</label>
+                                            <input type="text" class="form-control" id="RazaMascota" placeholder="Escribe la raza de tu mascota" required>
+
+                                            <label for="EdadMascota" class="form-label">Edad:</label>
+                                            <input type="text" class="form-control" id="EdadMascota" placeholder="Escribe la edad de tu mascota" required>
+
+                                            <div class="d-flex justify-content-center mt-5">
+                                                <input type="submit" value="Cotizar" class="btn hvr-wobble-top">
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="eslogan container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center fst-italic">"<strong>Nuro Assistance</strong>, el complemento ideal para ti y tu familia"</h1>
+        </div>
+    </div>
+
+</section>
+
+<section class="servicios container">
+
+    <div class="row">
+
+        <div class="col-12 col-sm-4 p-2">
+
+            <div class="card d-flex flex-column align-items-center p-3">
+
+                <div class="">
+                    <img class="card-img-top rounded" src="assets/Imagenes/AsistenciaViajero/viajera.jpg">
+                </div>
+
+
+                <div class="card-body d-flex flex-column align-items-center wow animated bounceInLeft box1" data-wow-delay="0.2s">
+                    <h5 class="text-center card-title">Asistencia al Viajero</h5>
+                    <p class="card-text fst-italic fw-light text-center">Viaja tranquilo, <br/> nosotros te cuidamos.</p>
+
+                    <a class="btn hvr-wobble-top">Ver mas</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-4 p-2">
+
+            <div class="card d-flex flex-column align-items-center p-3">
+
+                <div class="">
+                    <img class="card-img-top rounded" src="assets/Imagenes/AsistenciaViajero/Doctora.jpg">
+                </div>
+
+
+                <div class="card-body d-flex flex-column align-items-center wow animated bounceInLeft box2" data-wow-delay="0.4s">
+                    <h5 class="text-center card-title">Asistencia Medica</h5>
+                    <p class="card-text fst-italic fw-light text-center">Cuida la salud de los tuyos, con nuestros planes de salud accesibles.</p>
+                    <a class="btn hvr-wobble-top">Ver mas</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-4 p-2">
+
+            <div class="card d-flex flex-column align-items-center p-3">
+
+                <div class="">
+                    <img class="card-img-top rounded" src="assets/Imagenes/AsistenciaViajero/mascota.jpg">
+                </div>
+
+
+                <div class="card-body d-flex flex-column align-items-center wow animated bounceInLeft box3" data-wow-delay="0.8s">
+                    <h5 class="text-center card-title">Tu Mascota</h5>
+                    <p class="card-text fst-italic fw-light text-center">Planes de prevision y atencion inmediata de fallecimiento de mascotas.</p>
+                    <a class="btn hvr-wobble-top">Ver mas</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="nosotros container-fluid" id="nosotros">
+
+    <div class="row">
+
+        <div class="info d-flex align-items-center  col-12 col-sm-6">
+
+            <div class="div-contenido  p-2">
+
+                <div>
+                    <h2 class="text-center mb-4">Nosotros</h2>
+                </div>
+
+
+                <p class="" style="text-align: justify !important;">
+                    <em><strong>Nuro Assistance</strong> ofrecemos los servicios y productos que necesitas para tu viaje y el de tu familia, permitiendo dejar protegido a tus seres queridos a la hora de no poder estar junto a ellos por efecto de obligaciones y distancia, asi como el acompañamiento
+                    ante situaciones complejas por ausencia permanente de tus seres queridos y hasta tu mascota. <br/><br/> <strong>Nuro Assistance</strong> es una plataforma de servicios diseñada para ofrecer a nuestros clientes y aliados comerciales
+                    diversidad de productos como:</em>
+                </p>
+
+                <ul>
+                    <li><em>Asistencia al viajero.</em></li>
+                    <li><em>Asistencia y control medico.</em></li>
+                    <li><em>Servicios de tecnologia.</em></li>
+                    <li><em>Tu mascota.</em></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!--div class="col-12 col-sm-6">
+            <img class="img-fluid" src="/assets/Imagenes/Fotos/mockup_of_man_holding_a_tablet_pro.png" alt="">
+        </div-->
+
+    </div>
+
+</section>
+
+<section class="cotizador container wow animate__backInRight p-5" id="cotizador">
+
+    <div class="row">
+
+        <div class="col-12 mb-4">
+            <h2 class="text-center fst-italic">Realiza tu Cotizacion Aqui!!</h2>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class=" d-flex justify-content-center">
+
+            <div class="divCotiza col-12 col-sm-8 p-3">
+
+
+                <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1" aria-selected="true">Viajes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile2" type="button" role="tab" aria-controls="pills-profile2" aria-selected="false">Salud</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact3" type="button" role="tab" aria-controls="pills-contact3" aria-selected="false">Mascota</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+                    <div class="tabViajes tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                        <form action="formViajes">
+
+                            <div class="d-flex flex-column mt-4">
+
+                                <label class="" for="">Origen:</label>
+                                <select class="selectOrigen" name="Origen" id="">
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </select>
+
+                                <label class="mt-2" for="">Destino:</label>
+                                <select name="Destino" id="">
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </select>
+
+                                <label class="mt-3" for="">Fecha Salida:</label>
+                                <input type="date" class="calendario form-control mt-1" name="fechaSalida" id="">
+
+                                <label for="">Fecha Regreso:</label>
+                                <input type="date" class="calendario form-control mt-1" name="fechaRegreso" id="">
+
+                                <label class="mt-2" for="">Cantidad de Viajeros:</label>
+                                <select name="Viajeros" id="">Viajeros
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+
+                                <label for="" class="form-label mt-2">Correo:</label>
+                                <input type="text" class="form-control" id="" placeholder="Escribe tu correo" required>
+
+                                <div class="d-flex justify-content-center mt-4">
+                                    <input type="submit" value="Cotizar" class="btn hvr-wobble-top">
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="tabSalud tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        <form action="formSalud">
+
+                            <label for="" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe tu nombre" required>
+
+                            <label for="" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe tu apellido" required>
+
+                            <label for="" class="form-label">Telefono:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe tu telefono" required>
+
+                            <label for="" class="form-label">Correo:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe tu correo" required>
+
+                            <label class="labelPais" for="">Pais:</label>
+                            <select class="selectPais mb-3" name="pais" id="">
+                                <option value="Mexico">Mexico</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+
+                            <label for="">Cantidad a Cotizar:</label>
+                            <select name="Personas" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="d-flex justify-content-center mt-5">
+                                <input type="submit" value="Cotizar" class="btn hvr-wobble-top">
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="tabMascota tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <form action="">
+
+                            <label for="" class="form-label">Nombres:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe tu nombre" required>
+
+                            <label for="" class="form-label">Apellidos:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe tu apellido" required>
+
+                            <label for="" class="form-label">Nombre Mascota:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe el de la mascota" required>
+
+                            <label for="">Tipo de mascota:</label>
+                            <select name="TipoMascota" id="">
+                                <option value="Gato">Gato</option>
+                                <option value="Perro">Perro</option>
+                            </select>
+
+                            <br/>
+
+                            <label for="" class="form-label">Raza:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe la raza de la mascota" required>
+
+                            <label for="" class="form-label">Edad:</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribe la edad de la mascota" required>
+
+                            <div class="d-flex justify-content-center mt-5">
+                                <input type="submit" value="Cotizar" class="btn hvr-wobble-top">
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--<router-outlet></router-outlet>-->

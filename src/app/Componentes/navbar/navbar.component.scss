@@ -1,0 +1,41 @@
+.navbar {
+    background: white;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid #8741fe;
+    .div-imagen {
+        margin-left: 20px;
+    }
+    button {
+        background: #8741fe;
+        margin-right: 15px;
+    }
+    .navbar-nav {
+        a {
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #8741fe;
+            color: white;
+        }
+    }
+}
+
+.div-ul {
+    //width: 90%;
+    margin-left: 10px;
+}
+
+a {
+    color: #8741fe;
+}
+
+li {
+    margin-left: 15px;
+}
+
+@media screen and (max-width:575px) and (min-width:0px) {
+    a {
+        display: inline-block;
+        padding: 10px;
+    }
+}

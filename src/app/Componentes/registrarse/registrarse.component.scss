@@ -1,0 +1,13 @@
+section {
+    margin-top: 200px;
+    margin-bottom: 110px;
+    .card {
+        .botonIniciar {
+            background: #8741fe;
+            color: white;
+        }
+        .botonIniciar:hover {
+            opacity: 0.8;
+        }
+    }
+}
